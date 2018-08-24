@@ -1,7 +1,9 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-ruby "2.5.1"
-gem "capybara"
-gem "rspec"
-gem "selenium-webdriver"
-gem "sinatra"
+source 'https://rubygems.org'
+
+ruby '2.5.1'
+gem 'capybara'
+gem 'rspec'
+gem 'selenium-webdriver'
+gem 'sinatra'

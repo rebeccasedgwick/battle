@@ -1,6 +1,8 @@
-feature "Enter names" do
-  scenario "Submitting names" do
+# frozen_string_literal: true
+
+feature 'Enter names' do
+  scenario 'Submitting names' do
     sign_in_and_play
-    expect(page).to have_content "Alice vs. Bob"
+    expect(page).to have_content 'Alice vs. Bob'
   end
 end
