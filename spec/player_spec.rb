@@ -1,12 +1,14 @@
-require "player"
+# frozen_string_literal: true
+
+require 'player'
 
 describe Player do
-  subject(:bob) {Player.new("Bob")}
-  subject(:alice) {Player.new("Alice")}
+  subject(:bob) { Player.new('Bob') }
+  subject(:alice) { Player.new('Alice') }
 
-  describe "#name" do
+  describe '#name' do
     it "Returns a player's name" do
-      expect(bob.name).to eq "Bob"
+      expect(bob.name).to eq 'Bob'
     end
   end
 
@@ -16,18 +18,9 @@ describe Player do
     end
   end
 
-  describe '#attack' do
-    it 'damages the player' do
-      expect(bob).to receive(:receive_damage)
-      alice.attack(bob)
-    end
-  end
-
   describe '#receive_damage' do
     it 'reduces the player hit points' do
       expect { alice.receive_damage }.to change { alice.hit_points }.by(-10)
     end
   end
-
-
 end
