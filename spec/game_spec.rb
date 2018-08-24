@@ -18,14 +18,17 @@ describe Game do
       expect(game.player_2).to eq player_2
     end
   end
+
+  describe '#current_turn' do
+    it "starts the game on player 1's turn" do
+      expect(game.current_turn).to eq player_1
+    end
+  end
+
+  describe '#switch_turns' do
+    it 'changes the turn' do
+      game.switch_turns
+      expect(game.current_turn).to eq player_2
+    end
+  end
 end
-
-
-
-# describe "#initialize" do
-#   it "returns the number, dish, price, and quantity of an item" do
-#     expect(subject.number).to eq "01"
-#     expect(subject.dish).to eq "meat curry"
-#     expect(subject.price).to eq "6.00"
-#     expect(subject.quantity).to eq "2"
-#   end
