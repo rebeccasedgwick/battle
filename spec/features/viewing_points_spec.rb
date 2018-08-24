@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 feature 'View Hit Points' do
   scenario "View Player 2's Hit Points" do
     visit('/')

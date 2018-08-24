@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 feature 'Enter names' do
   scenario 'Submitting names' do
     sign_in_and_play
