@@ -7,7 +7,7 @@ feature "Switch turns" do
 
     scenario "when player 1 has attacked" do
       sign_in_and_play
-      click_button 'Attack'
+      attack_and_keep_playing
       expect(page).not_to have_content("Alice's turn")
       expect(page).to have_content("Bob's turn")
     end

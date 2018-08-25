@@ -7,6 +7,7 @@ class Game
   end
 
   def attack(player)
+    player = opponent_of(@current_turn)
     player.receive_damage
   end
 
